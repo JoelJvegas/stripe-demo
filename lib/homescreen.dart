@@ -39,7 +39,7 @@ class _HomeScreenState extends State<HomeScreen> {
 
   Future<void> makePayment() async {
     try {
-      paymentIntent = await createPaymentIntent('100', 'USD');
+      paymentIntent = await createPaymentIntent('10', 'USD');
 
       //STEP 2: Initialize Payment Sheet
       await Stripe.instance
